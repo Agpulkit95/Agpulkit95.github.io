@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pulkit Agarwal · Software engineer, AI agents</title>
+<meta name="description" content="Software engineer in Bengaluru. I build AI agents and last-mile delivery systems, speak about building with AI, and help engineers grow.">
+<meta name="author" content="Pulkit Agarwal">
+<meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://agpulkit95.github.io/about/">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Ccircle%20cx='32'%20cy='32'%20r='32'%20fill='%230f6b63'/%3E%3Ctext%20x='32'%20y='42'%20text-anchor='middle'%20font-family='system-ui,sans-serif'%20font-size='28'%20font-weight='700'%20fill='%23fff'%3EPA%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Pulkit Agarwal · Software engineer, AI agents">
+<meta property="og:description" content="I build AI agents and last-mile delivery systems, speak about building with AI, and help engineers grow.">
+<meta property="og:url" content="https://agpulkit95.github.io/about/">
+<meta property="og:site_name" content="Pulkit Agarwal">
+<meta name="twitter:card" content="summary">
+<style>
+  :root {
+    --bg: #fbfaf7;
+    --surface: #ffffff;
+    --text: #1c1d21;
+    --muted: #5a5f6b;
+    --line: #e4e1da;
+    --accent: #0f6b63;
+    --accent-soft: #e3f1ef;
+    --chip: #f1eee8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1115;
+      --surface: #171a20;
+      --text: #e8eaef;
+      --muted: #9ea6b4;
+      --line: #272b33;
+      --accent: #6fd6c9;
+      --accent-soft: #16302d;
+      --chip: #1e222a;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--surface); padding: 8px 12px; }
+  .skip:focus { left: 12px; top: 12px; z-index: 10; }
+  main:focus { outline: none; }
+  .wrap { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+
+  .hero { padding: 72px 0 36px; display: flex; gap: 28px; align-items: flex-start; }
+  .monogram {
+    flex: none; width: 84px; height: 84px; border-radius: 50%;
+    display: grid; place-items: center;
+    background: var(--accent-soft); color: var(--accent);
+    font-size: 30px; font-weight: 700; letter-spacing: 1px;
+  }
+  h1 { margin: 0; font-size: clamp(2.1rem, 5.2vw, 3.1rem); line-height: 1.1; letter-spacing: -0.02em; }
+  .role { margin: 10px 0 0; color: var(--muted); font-size: 1.02rem; }
+  .tagline { margin: 16px 0 0; font-size: 1.22rem; line-height: 1.45; max-width: 34em; }
+  .hero nav { margin-top: 19px; font-size: 0.95rem; line-height: 2; text-wrap: balance; }
+  .hero nav a { display: inline-block; color: var(--muted); text-decoration: none; }
+  .hero nav a:not(:last-child) { margin-right: 16px; }
+  .hero nav a:hover { color: var(--accent); text-decoration: underline; }
+  .links { margin: 5px 0 0; font-size: 0.95rem; }
+  .links a { display: inline-block; padding: 6px 0; }
+
+  .grid { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; grid-template-columns: repeat(2, 1fr); }
+  .grid li { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; }
+  .grid strong { display: block; font-size: 1rem; }
+  .grid span { display: block; color: var(--muted); font-size: 0.93rem; margin-top: 3px; }
+  .facts { margin-top: 8px; }
+  #education .grid li:first-child { grid-column: 1 / -1; }
+
+  section { padding: 44px 0 8px; }
+  h2 {
+    margin: 0 0 18px; font-size: 0.82rem; font-weight: 700;
+    letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted);
+  }
+  section p { margin: 0 0 14px; max-width: 40em; }
+
+  .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 10px; }
+  .chips li {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 999px;
+    padding: 9px 16px; font-size: 0.98rem;
+  }
+
+  .rows { list-style: none; margin: 0; padding: 0; }
+  .rows li { display: grid; grid-template-columns: 150px 1fr; gap: 4px 24px; padding: 14px 0; border-top: 1px solid var(--line); }
+  .rows li:first-child { border-top: 0; padding-top: 2px; }
+  .rows .when { color: var(--muted); font-size: 0.86rem; letter-spacing: 0.04em; text-transform: uppercase; padding-top: 3px; }
+  .rows strong { display: block; text-wrap: balance; }
+  .rows span { display: block; color: var(--muted); font-size: 0.95rem; }
+
+  .job { display: grid; grid-template-columns: 150px 1fr; gap: 8px 24px; padding: 22px 0; border-top: 1px solid var(--line); }
+  .job:first-of-type { border-top: 0; padding-top: 4px; }
+  .dates { margin: 3px 0 0; color: var(--muted); font-size: 0.86rem; letter-spacing: 0.04em; text-transform: uppercase; }
+  h3 { margin: 0; font-size: 1.12rem; line-height: 1.35; text-wrap: balance; }
+  .where { margin: 2px 0 10px; color: var(--muted); font-size: 0.93rem; }
+  h4 { margin: 16px 0 6px; font-size: 0.95rem; color: var(--accent); }
+  .job ul.points { margin: 0; padding-left: 1.15em; }
+  .job ul.points li { margin: 0 0 7px; }
+  .tags { list-style: none; margin: 14px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 7px; }
+  .tags li { background: var(--chip); border-radius: 999px; padding: 3px 11px; font-size: 0.82rem; color: var(--muted); }
+
+  footer { margin-top: 56px; padding: 26px 0 60px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  footer p { margin: 0 0 6px; }
+
+  @media (max-width: 680px) {
+    body { font-size: 16px; }
+    .hero { flex-direction: column; gap: 18px; padding-top: 44px; }
+    .monogram { width: 64px; height: 64px; font-size: 23px; }
+    .grid { grid-template-columns: 1fr; }
+    .job, .rows li { grid-template-columns: 1fr; gap: 4px; }
+  }
+  @media print {
+    :root {
+      --bg: #fff; --surface: #fff; --text: #000; --muted: #5a5f6b;
+      --line: #e4e1da; --accent: #0f6b63; --accent-soft: #e3f1ef; --chip: #f1eee8;
+    }
+    html { font-size: 10.5pt; }
+    body { background: #fff; color: #000; font-size: 11pt; }
+    .hero nav, .skip { display: none; }
+    .hero { padding: 0 0 18px; }
+    section { padding-top: 26px; }
+    footer { margin-top: 30px; padding-bottom: 0; }
+    h2, h3, h4, .where { break-after: avoid; page-break-after: avoid; }
+    .grid li, .rows li, .chips li, .points li, .tags, .job + .job { break-inside: avoid; page-break-inside: avoid; }
+    .monogram, .tags li { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    a[href^="http"]::after { content: " (" attr(href) ")"; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="monogram" aria-hidden="true">PA</div>
+    <div>
+      <h1>Pulkit Agarwal</h1>
+      <p class="role">Software Development Engineer II at Amazon · Bengaluru, India</p>
+      <p class="tagline">I build AI agents and last-mile delivery systems, and I show engineers how to turn blockers into working software with AI.</p>
+      <nav aria-label="Sections">
+        <a href="#about">About</a>
+        <a href="#talk">Let's talk about</a>
+        <a href="#work">Selected work</a>
+        <a href="#talks">Talks</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+      </nav>
+      <p class="links"><a href="https://github.com/Agpulkit95">GitHub</a></p>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <ul class="grid facts" role="list" aria-label="At a glance">
+      <li><strong>9 years in software</strong><span>most of it at Amazon and AWS, from cloud support to leading engineering projects</span></li>
+      <li><strong>AI agents in daily use</strong><span>LLM agents used by engineering and operations teams, built on MCP tool servers and connected to other teams' agents over A2A</span></li>
+      <li><strong>Conference speaker</strong><span>breakout session at Amazon DevCon 2026 in Seattle, plus two tools in its Tools Fair</span></li>
+      <li><strong>Hackathon awards</strong><span>third place in an internal AI innovation hackathon and a "Think Big" team award, both in 2026</span></li>
+    </ul>
+
+    <section id="about" aria-labelledby="about-h">
+      <h2 id="about-h">About</h2>
+      <p>I'm a software engineer in Bengaluru. I started as a software engineer in Jaipur, moved into cloud support at AWS, where I helped companies move onto the cloud, then became a software development engineer at Amazon in 2019 and an SDE II in 2021.</p>
+      <p>Today I work on last-mile delivery for Amazon's quick-commerce business in India. Alongside that I build AI agents that engineers and operations teams use every day to investigate alarms and deliveries, and a developer tool that other teams have picked up for their own codebases.</p>
+      <p>I like closing the gap between an idea and something people can use. When a team is waiting on a dependency, I would rather build a first version in a couple of days and learn from it. That habit led to my conference talk and most of the tools on this page, and it helped two of my teams win hackathon awards.</p>
+      <p>I also teach. I run GenAI sessions for engineers, review designs and code, and mentor engineers.</p>
+    </section>
+
+    <section id="talk" aria-labelledby="talk-h">
+      <h2 id="talk-h">Let's talk about</h2>
+      <ul class="chips" role="list">
+        <li>Shipping a working first version in 48 hours with AI</li>
+        <li>Putting AI agents to work in everyday engineering</li>
+        <li>Building LLM agents that teams use every day</li>
+        <li>How I moved from a support role into software engineering</li>
+        <li>Growing as an engineer: taking ownership and leading projects</li>
+        <li>Getting an idea noticed: demos, hackathons and talks</li>
+        <li>On-call, alarms and operational habits that last</li>
+      </ul>
+    </section>
+
+    <section id="work" aria-labelledby="work-h">
+      <h2 id="work-h">Selected work</h2>
+      <ul class="grid" role="list">
+        <li><strong>Operations agent</strong><span>An LLM agent that engineers and store-operations teams ask about alarms and deliveries. It investigates through tools and answers in chat.</span></li>
+        <li><strong>Tool servers for agents</strong><span>Model Context Protocol servers that give agents controlled, read-only access to operational data.</span></li>
+        <li><strong>Code knowledge graph</strong><span>A tool that turns a codebase into a queryable graph, so an AI agent can answer a code question with one query. Built in days and adopted by teams in several organisations.</span></li>
+        <li><strong>Agent-to-agent integrations</strong><span>Agents owned by different teams can hand questions to each other over the A2A protocol, with loop protection.</span></li>
+        <li><strong>Alerting for store operations</strong><span>Features for a rule-based alerting service with configurable thresholds and severity levels, and for a web console used by operations teams.</span></li>
+        <li><strong>Last-mile delivery services</strong><span>Event-driven Java services on AWS that create and track delivery jobs and handle exceptions in quick commerce.</span></li>
+      </ul>
+    </section>
+
+    <section id="talks" aria-labelledby="talks-h">
+      <h2 id="talks-h">Talks and teaching</h2>
+      <ul class="rows" role="list">
+        <li><span class="when">Oct 2026</span><div><strong>Stop Waiting, Start Building: Turning Blockers into 48-Hour Side Quests with AI</strong><span>Breakout session, Amazon DevCon 2026, Seattle</span></div></li>
+        <li><span class="when">Oct 2026</span><div><strong>Two tools in the DevCon Tools Fair</strong><span>Demo tables for a code knowledge-graph tool and an operations agent at the three-day fair</span></div></li>
+        <li><span class="when">2026</span><div><strong>GenAI across the software development lifecycle</strong><span>Demo booth for students at IIT Madras, Chennai</span></div></li>
+        <li><span class="when">2024 — 2026</span><div><strong>GenAI sessions for engineers</strong><span>Recorded sessions on building with AI, since late 2024</span></div></li>
+      </ul>
+    </section>
+
+    <section id="recognition" aria-labelledby="rec-h">
+      <h2 id="rec-h">Recognition</h2>
+      <ul class="rows" role="list">
+        <li><span class="when">Aug 2026</span><div><strong>Voted second in the prototype category</strong><span>Internal AI showcase, Seattle, for the same prototype as the hackathon entry below</span></div></li>
+        <li><span class="when">Jul 2026</span><div><strong>Third place, internal AI innovation hackathon</strong><span>For a working prototype built with a three-person team</span></div></li>
+        <li><span class="when">Jul 2026</span><div><strong>"Think Big" award</strong><span>Internal organisation hackathon, as part of a five-person team</span></div></li>
+      </ul>
+    </section>
+
+    <section id="experience" aria-labelledby="exp-h">
+      <h2 id="exp-h">Experience</h2>
+
+      <article class="job">
+        <p class="dates">2019 — Present</p>
+        <div>
+          <h3>Software Development Engineer II · Amazon</h3>
+          <p class="where">Bengaluru, India · SDE from 2019, SDE II since 2021</p>
+
+          <h4>AI and agents</h4>
+          <ul class="points">
+            <li>Designing and building LLM-based agents on Amazon Bedrock that answer on-call and store-operations questions by calling tools over operational data.</li>
+            <li>Building, with a teammate, Model Context Protocol (MCP) servers that give AI agents controlled, read-only access to operational data.</li>
+            <li>Connecting agents over the agent-to-agent (A2A) protocol, with loop protection, and exposing them through chat.</li>
+            <li>Building multi-step investigation workflows for alarms and delivery failures, and running blind side-by-side evaluations to check answer quality when models or prompts change.</li>
+            <li>Building developer tools on top of AI coding agents, including a code knowledge graph adopted by teams in several organisations.</li>
+          </ul>
+
+          <h4>Systems</h4>
+          <ul class="points">
+            <li>Building event-driven Java services on AWS for last-mile delivery in Amazon's quick-commerce business in India: creating and tracking delivery jobs and handling exceptions.</li>
+            <li>Building features for a rule-based alerting service for store operations, with configurable thresholds and severity levels, and for a TypeScript web console for operations teams.</li>
+            <li>Working on infrastructure as code, observability and on-call health, including dead-letter-queue investigations, launch plans and a launch readiness audit.</li>
+            <li>Earlier: checkout and promotions systems for Amazon's grocery and quick-commerce businesses, and scalable REST services on the Java and Spring stack.</li>
+          </ul>
+
+          <h4>Leadership</h4>
+          <ul class="points">
+            <li>Leading design and delivery on projects that span several teams, and reviewing designs and code.</li>
+            <li>Teaching GenAI practices to engineers and mentoring.</li>
+            <li>Driving adoption of shared AI tooling and a team knowledge base.</li>
+          </ul>
+
+          <ul class="tags" role="list" aria-label="Technologies">
+            <li>Java</li><li>Python</li><li>TypeScript</li><li>Amazon Bedrock</li><li>MCP</li><li>A2A</li>
+            <li>ECS</li><li>Lambda</li><li>DynamoDB</li><li>SQS</li>
+            <li>OpenSearch</li><li>CloudWatch</li><li>AWS CDK</li><li>OpenTelemetry</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="dates">2017 — 2019</p>
+        <div>
+          <h3>Cloud Support Engineer · Amazon Web Services</h3>
+          <p class="where">Bengaluru, India</p>
+          <ul class="points">
+            <li>Helped businesses onboard to the cloud on AWS, working with companies onsite.</li>
+            <li>Designed and launched Python automation code for an internal team, and developed automation code for the AWS Professional Services team.</li>
+            <li>Designed automation using AWS CloudFormation and Python.</li>
+            <li>Specialised in database support, working on Amazon Aurora and its enhancements and features.</li>
+            <li>Led a team of five interns and built a console-based application on AWS for internal use.</li>
+          </ul>
+          <ul class="tags" role="list" aria-label="Technologies">
+            <li>Python</li><li>AWS CloudFormation</li><li>Amazon Aurora</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="dates">2017</p>
+        <div>
+          <h3>Software Engineer · In Time Tec</h3>
+          <p class="where">Jaipur, India</p>
+          <ul class="points">
+            <li>Worked on a product portfolio tool for HP products that lets users configure products and export them to PDF or Excel.</li>
+          </ul>
+          <ul class="tags" role="list" aria-label="Technologies">
+            <li>.NET</li><li>AngularJS</li><li>MySQL</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="job">
+        <p class="dates">2016</p>
+        <div>
+          <h3>Intern · Tata Consultancy Services</h3>
+          <p class="where">Jaipur, India</p>
+          <ul class="points">
+            <li>Built an online recruitment portal to help the HR team find candidates for open positions.</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+
+    <section id="education" aria-labelledby="edu-h">
+      <h2 id="edu-h">Education and certifications earned</h2>
+      <ul class="grid" role="list">
+        <li><strong>Bachelor's in Computer Science</strong><span>JECRC, Jaipur · 2013 to 2017</span></li>
+        <li><strong>AWS Certified Solutions Architect</strong><span>Associate</span></li>
+        <li><strong>AWS Certified SysOps Administrator</strong><span>Associate</span></li>
+        <li><strong>AWS Certified Developer</strong><span>Associate</span></li>
+        <li><strong>Google Cloud Associate Cloud Engineer</strong><span>Google Cloud</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>Views here are my own and not those of my employer.</p>
+    <p>Last updated November 2026.</p>
+  </footer>
+</div>
+</body>
+</html>
